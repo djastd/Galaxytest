@@ -8,4 +8,3 @@ $(document).ready(function() {
     $('#list .list__text').not($(this).next()).slideUp(1000);
       $(this).next().slideToggle(2000);
   }
-

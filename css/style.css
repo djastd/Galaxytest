@@ -6,7 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-width: 1024px;
+    min-width: 600px;
+    flex-direction: column;
+    align-content: stretch;
 }
+
 
 .body a:visited {
     color: #000000;
@@ -41,9 +46,16 @@
 }
 
 .header_servises-theme {
-    margin-top: 5.35%;
+    margin-top: 85.6px;
 
 }
+
+@media all and (max-width: 1000px) {
+    .header_servises-theme {
+ justify-content: center;
+    }
+}
+
 
 /* block container */
 
@@ -60,19 +72,14 @@
     justify-content: center;
 }
 
-@media all and (max-width: 1024px) {
-    .container_main-theme {
-        max-width: 1024px;
-        min-width: 518px;
-    }
-}
+
 
 .container__item_main-theme {
     flex-basis: 100%;
-    margin-top: 23.5%;
+    margin-top: 240px;
     font-size: 0.8em;
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
 }
 
 .container_servises-theme {
@@ -84,11 +91,31 @@
 
 .container__item_servises-theme {
     font-size: 0.8em;
-    margin-left: 2.5%;
-    margin-top: 12.5%;
-    margin-bottom: 2%;
+    margin-left: 40px;
+    margin-bottom: 20px;
     flex-basis: 100%;
+    margin-top: 200px;
 }
+
+@media all and (max-width: 1000px) {
+    .container_main-theme {
+        max-width: 1024px;
+        min-width: 518px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .container__item_servises-theme {
+ justify-content: center;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .container_servises-theme {
+ justify-content: center;
+    }
+}
+
 
 /* block main */
 
@@ -121,6 +148,13 @@ justify-content: flex-start;
 align-content: space-between;
 }
 
+@media all and (max-width: 1000px) {
+    .section_servises-theme {
+        justify-content: center;
+    }
+    }
+    
+
 
 
 /* logotype */
@@ -135,20 +169,29 @@ background-size: 100%;
 .logotype_main-theme {
 width: 250px;
 height: 185px;
-margin-top: 46%;
-margin-bottom: 4%;
+margin-top: 470px;
+margin-bottom: 45px;
 }
 
 .logotype_servises-theme {
 width: 157px;
 height: 116px;
-margin-left: 2.15%;
-margin-bottom: 1.25%;
+margin-left: 34.4px;
+margin-bottom: 20px;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
     .logotype_main-theme {
         margin-top: 20%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .logotype_servises-theme {
+       width: 250px;
+        height: 185px;
+        margin-left: 0px; 
+        margin-bottom: 20px;
     }
 }
 
@@ -163,12 +206,12 @@ margin-bottom: 1.25%;
 }
 
 .navigation_main-theme {
-margin-top: 1.5%;
+margin-top: 10px;
 color: #000000;
 }
 
 .navigation_servises-theme {
-    margin-left: 5%;
+    margin-left: 80px;
 }
 
 .navigation-container {
@@ -239,8 +282,14 @@ bottom: -5px;
 background: #ffffff;
 }
 
+@media all and (max-width: 1000px) {
+    .navigation {
+max-width: 80%;
+margin-left: 0px;
+    }
+}
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
     .navigation-container__item {
         font-size: 2em;
         width: 300px;
@@ -249,11 +298,21 @@ background: #ffffff;
     }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1000px) {
     .navigation-container {
 justify-content: center;
+border-right: 2px solid #ffffff;
+border-left: 2px solid #ffffff;
     }
 }
+
+@media all and (max-width: 1000px) {
+.navigation-container li {
+    flex-basis: 60%;
+}
+}
+
+
 
 
 /* block list */
@@ -262,10 +321,9 @@ justify-content: center;
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
-    list-style: none;
     font-size: 1.5em;
-    margin-left: 3.1%;
-    margin-top: 2.3%;
+    margin-left: 49.6px;
+    margin-top: 36.8px;
     max-width: 750px;
     align-items: stretch;
  
@@ -273,7 +331,7 @@ justify-content: center;
 
 .list__item {
     flex-basis: 90%;
-    margin-bottom: 4.7%;
+    margin-bottom: 35.23px;
     font-family: italic;
 }
 
@@ -285,12 +343,12 @@ justify-content: center;
     font-size: 0.5em;
     font-family: garamond; 
     line-height: 2;
-    margin-left: 3%;
+    margin-left: 22.50px;
     display: none;
 }
 
 .list__text p{
-margin-bottom: 4.5%;
+margin-bottom: 31.50px;
 }
 
 .list__icon {
@@ -301,13 +359,29 @@ margin-bottom: 4.5%;
     height: 16px;
     background-position: -25px 0px;
     flex-basis: 5%;
-    margin-right: 3%;
-    margin-top: 1%;
+    margin-right: 22.50px;
+    margin-top: 7.5px;
 }
 
 .show {
  background-position: 0px 0px;
 }
+
+@media all and (max-width: 1000px) {
+    .list {
+margin-left: 0px;
+}}
+
+@media all and (max-width: 1000px) {
+    .list__item {
+   font-size: 2em;
+}}
+
+@media all and (max-width: 1000px) {
+    .list__icon {
+display: none;
+}}
+
 
 /* fonts*/
 
